@@ -12,6 +12,25 @@
 [class^="col-"], [class*=" col-"] { grid-column: span 12; }
 
 
+.hamburger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; height: 40px;
+  border-radius: 6px;
+  border: 1px solid var(--neutral-300);
+  background: var(--white);
+}
+.hamburger span { width: 18px; height: 2px; background: var(--neutral-800); position: relative; }
+.hamburger span::before, .hamburger span::after { content:""; position:absolute; left:0; right:0; height:2px; background:inherit; }
+.hamburger span::before { top:-6px; }
+.hamburger span::after  { top: 6px; }
+
+/* ESCONDER hambúrguer em telas largas */
+@media (min-width: 1024px){
+  .hamburger{ display: none; }
+}
+
 
 
 @media (min-width: 576px) {
