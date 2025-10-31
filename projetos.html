@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos | Instituto Caminhos Abertos</title>
+  <meta name="description" content="Projetos ativos, categorias e oportunidades de apoio e voluntariado.">
+  <link rel="stylesheet" href="assets/css/design-system.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container bar">
+      <a class="brand" href="index.html">
+        <span class="brand-logo" aria-hidden="true"></span>
+        Instituto Caminhos Abertos
+      </a>
+      <button class="hamburger" id="btnHamburger" aria-label="Abrir menu" aria-controls="navPanel" aria-expanded="false">
+        <span></span>
+      </button>
+      <nav class="nav" id="navPanel">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li>
+            <a href="projetos.html" aria-current="page" aria-haspopup="true" aria-expanded="false">Projetos ▾</a>
+            <ul class="submenu" aria-label="submenu projetos">
+              <li><a href="#reforco">Reforço Escolar</a></li>
+              <li><a href="#tecnologia">Tecnologia e Futuro</a></li>
+            </ul>
+          </li>
+          <li><a href="cadastro.html">Seja Voluntário</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container section">
+      <header class="projects-header">
+        <h2>Projetos Ativos</h2>
+        <div class="filters">
+          <span class="tag">Todos</span>
+          <span class="tag">Educação</span>
+          <span class="tag">Tecnologia</span>
+          <span class="tag">Mentoria</span>
+        </div>
+      </header>
+
+      <div class="card-grid" style="margin-top: var(--space-16)">
+        <article class="card" id="reforco">
+          <div class="card-media"><img src="assets/img/projeto-criancas.jpg" alt="Crianças estudando"></div>
+          <div class="card-body">
+            <h3 class="card-title">Reforço Escolar Comunitário</h3>
+            <div class="card-meta">
+              <span class="badge badge-success">Educação</span>
+              <span class="badge badge-info">Fundamental II</span>
+            </div>
+            <p>Aulas de português e matemática para estudantes com defasagem escolar. Turmas reduzidas e acompanhamento individual.</p>
+            <a class="btn btn-outline" href="cadastro.html">Quero apoiar</a>
+          </div>
+        </article>
+
+        <article class="card" id="tecnologia">
+          <div class="card-media"><img src="assets/img/ong-equipe.jpg" alt="Adolescentes em laboratório de informática"></div>
+          <div class="card-body">
+            <h3 class="card-title">Tecnologia e Futuro</h3>
+            <div class="card-meta">
+              <span class="badge badge-info">Tecnologia</span>
+              <span class="badge badge-warning">13–17 anos</span>
+            </div>
+            <p>Introdução a pensamento computacional, lógica e ferramentas digitais com mentoria de voluntários da área de TI.</p>
+            <button class="btn btn-primary" data-open-modal="#modalProjeto">Saiba mais</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="modal-backdrop" id="modalProjeto">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <header id="modal-title">Tecnologia e Futuro</header>
+        <div class="content">Oficinas semanais com metodologia ativa, portfólio inicial e orientação profissional para o primeiro passo no mundo da tecnologia.</div>
+        <footer>
+          <button class="btn btn-outline" data-close-modal>Fechar</button>
+          <a class="btn btn-primary" href="cadastro.html">Quero ser voluntário</a>
+        </footer>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; 2025 Instituto Caminhos Abertos – Doação com transparência</div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

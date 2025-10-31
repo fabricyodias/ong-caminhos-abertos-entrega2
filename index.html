@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instituto Caminhos Abertos</title>
+  <meta name="description" content="ONG de inclusão social por meio de educação, tecnologia e apoio socioemocional.">
+  <link rel="stylesheet" href="assets/css/design-system.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container bar">
+      <a class="brand" href="index.html">
+        <span class="brand-logo" aria-hidden="true"></span>
+        Instituto Caminhos Abertos
+      </a>
+      <button class="hamburger" id="btnHamburger" aria-label="Abrir menu" aria-controls="navPanel" aria-expanded="false">
+        <span></span>
+      </button>
+      <nav class="nav" id="navPanel">
+        <ul>
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li>
+            <a href="projetos.html" aria-haspopup="true" aria-expanded="false">Projetos ▾</a>
+            <ul class="submenu" aria-label="submenu projetos">
+              <li><a href="projetos.html#reforco">Reforço Escolar</a></li>
+              <li><a href="projetos.html#tecnologia">Tecnologia e Futuro</a></li>
+            </ul>
+          </li>
+          <li><a href="cadastro.html">Seja Voluntário</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero home-hero container">
+      <div>
+        <h1 class="hero-title">Educação muda destinos</h1>
+        <p class="hero-sub">Apoiamos crianças e adolescentes com reforço escolar, oficinas de tecnologia e desenvolvimento socioemocional.</p>
+        <div class="kpis" style="margin-top: var(--space-16)">
+          <div class="kpi"><strong>180+</strong> jovens em 2024</div>
+          <div class="kpi"><strong>72%</strong> melhora escolar</div>
+          <div class="kpi"><strong>50</strong> voluntários ativos</div>
+        </div>
+        <div style="margin-top: var(--space-24)"><a class="btn btn-primary" href="cadastro.html">Quero ser voluntário</a></div>
+      </div>
+      <figure>
+        <img src="assets/img/voluntarios.jpg" alt="Voluntários em atividade com crianças">
+      </figure>
+    </section>
+
+    <section class="container section">
+      <header><h2>Transparência</h2></header>
+      <div class="alert alert-info">Todos os apoios são registrados e publicados em relatórios trimestrais.</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; 2025 Instituto Caminhos Abertos – Transparência e Impacto Social</div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
